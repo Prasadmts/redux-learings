@@ -4,15 +4,17 @@
 
 import { INCREMENT, DECREMENT, RESET } from "./actionTypes.js";
 
-export const increment = () => {
+export const increment = (value) => {
     return {
-        type: INCREMENT
+        type: INCREMENT,
+        payload: value // payload is basically a value
     }
 }
 
-export const decrement = () => {
+export const decrement = (value) => {
     return {
-        type: DECREMENT
+        type: DECREMENT,
+        payload: value
     }
 }
 

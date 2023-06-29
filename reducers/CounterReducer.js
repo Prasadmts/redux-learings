@@ -7,9 +7,9 @@ const CounterReducer = (state=counterInitialState, actions) => { // two paramter
     // mostly switch case to be used :
     switch(actions.type) {
         case INCREMENT:
-            return state + 1;
+            return state + actions.payload;
         case DECREMENT:
-            return state - 1;
+            return state - actions.payload;
         case RESET:
             return 0;
         default:

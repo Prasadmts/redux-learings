@@ -13,8 +13,8 @@ store.subscribe(
     }
 )
 
-store.dispatch(increment()) // dispath() 
-store.dispatch(decrement())
-store.dispatch(increment())
-store.dispatch(increment())
-store.dispatch(reset())
+store.dispatch(increment(10)) // dispath() 
+// store.dispatch(decrement())
+store.dispatch(increment(20))
+store.dispatch(increment(100))
+store.dispatch(decrement(500)) 
